@@ -38,6 +38,10 @@ class HomeController extends Controller
     {
         return view('index');
     }
+    public function landing()
+    {
+        return view('landing.landing');
+    }
 
     /*Language Translation*/
     public function lang($locale)
