@@ -7,12 +7,12 @@
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('body'); ?>
 
-    <body class="body" data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <?php $__env->stopSection(); ?>
     <?php $__env->startSection('content'); ?>
 
         <!-- Begin page -->
-        <div class="layout-wrapper landing">
+        <div class=" landing">
 
             <div class="container-fluid">
                 <div class="col p-5">
@@ -68,8 +68,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
                         <div class="col-lg-3 col-md-6">
                             <div class="card shadow-none text-center py-3">
                                 <div class="card-body py-4">
@@ -134,4 +132,4 @@
         <script src="<?php echo e(URL::asset('build/js/pages/job-lading.init.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.landingtop', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/landing/landing.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.landing layouts.landingtop', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/landing/landing.blade.php ENDPATH**/ ?>

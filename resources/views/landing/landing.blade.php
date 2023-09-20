@@ -1,4 +1,4 @@
-@extends('layouts.landingtop')
+@extends('layouts.landing layouts.landingtop')
 @section('title')
     Job landing
 @endsection
@@ -8,12 +8,12 @@
 @endsection
 @section('body')
 
-    <body class="body" data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <body data-bs-spy="scroll" data-bs-target="#navbar-example">
     @endsection
     @section('content')
 
         <!-- Begin page -->
-        <div class="layout-wrapper landing">
+        <div class=" landing">
 
             <div class="container-fluid">
                 <div class="col p-5">
@@ -69,8 +69,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
                         <div class="col-lg-3 col-md-6">
                             <div class="card shadow-none text-center py-3">
                                 <div class="card-body py-4">

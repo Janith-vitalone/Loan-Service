@@ -42,6 +42,10 @@ class HomeController extends Controller
     {
         return view('landing.landing');
     }
+    public function sales()
+    {
+        return view('sales.salesdash');
+    }
 
     /*Language Translation*/
     public function lang($locale)
