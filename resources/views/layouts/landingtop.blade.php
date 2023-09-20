@@ -17,8 +17,8 @@
 @show
     <!-- Begin page -->
     <div id="layout-wrapper">
-        @include('layouts.topbar')
-        @include('layouts.sidebar')
+        @include('layouts.landingtopbar')
+
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -36,7 +36,6 @@
     </div>
     <!-- END layout-wrapper -->
 
-    @include('layouts.customizer')
 
     <!-- JAVASCRIPT -->
     @include('layouts.vendor-scripts')

@@ -17,7 +17,7 @@
 <?php echo $__env->yieldSection(); ?>
     <!-- Begin page -->
     <div id="layout-wrapper">
-        <?php echo $__env->make('layouts.topbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php echo $__env->make('layouts.landingtopbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
         <!-- ============================================================== -->
         <!-- Start right Content here -->
@@ -36,7 +36,6 @@
     </div>
     <!-- END layout-wrapper -->
 
-    <?php echo $__env->make('layouts.customizer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
     <!-- JAVASCRIPT -->
     <?php echo $__env->make('layouts.vendor-scripts', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
