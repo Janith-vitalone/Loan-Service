@@ -20,654 +20,293 @@
                 <img src="<?php echo e(URL::asset('build/images/logo-light.png')); ?>" alt="" height="17">
             </span>
         </a>
-        <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+        <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                id="vertical-hover">
             <i class="ri-record-circle-line"></i>
         </button>
     </div>
 
     <div id="scrollbar">
         <div class="container-fluid">
-
             <div id="two-column-menu">
             </div>
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span><?php echo app('translator')->get('translation.menu'); ?></span></li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i data-feather="home" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.dashboards'); ?></span>
+                    <a class="nav-link menu-link" href="<?php echo e(route('sales.landing')); ?>" role="button">
+                        <i data-feather="home" class="icon-dual"></i> <span>HOME</span>
                     </a>
-                    <div class="collapse menu-dropdown" id="sidebarDashboards">
-
-                    </div>
                 </li> <!-- end Dashboard Menu -->
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
-                        <i data-feather="grid" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.apps'); ?></span>
+                    <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarApps">
+                        <i data-feather="grid" class="clipboard2"></i> <span>APPLICATION</span>
                     </a>
-                   
+                    <div class="collapse menu-dropdown" id="sidebarApps">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="sales.forms-select" class="nav-link">Add CRO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Change CRO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Add Village</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Root Create</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Basic Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">WE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Family Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Guarantor 01 Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Guarantor 02 Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Guarantor 03 Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">PDC Security</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Financial Detail</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Loan Detail</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Add Holiday</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i data-feather="layout" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.layouts'); ?></span><span class="badge badge-pill bg-danger" data-key="t-hot"><?php echo app('translator')->get('translation.hot'); ?></span>
+                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarLayouts">
+                        <i data-feather="layout" class="icon-dual"></i> <span>APPROVALS</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarLayouts">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="layouts-horizontal" target="_blank" class="nav-link"><?php echo app('translator')->get('translation.horizontal'); ?></a>
+                                <a href="apps-calendar" class="nav-link">First Approval</a>
                             </li>
                             <li class="nav-item">
-                                <a href="layouts-detached" target="_blank" class="nav-link"><?php echo app('translator')->get('translation.detached'); ?></a>
+                                <a href="apps-chat" class="nav-link">Loan Approval</a>
                             </li>
                             <li class="nav-item">
-                                <a href="layouts-two-column" target="_blank" class="nav-link"><?php echo app('translator')->get('translation.two-column'); ?></a>
+                                <a href="#sidebarEmail" class="nav-link">Cheque Approval</a>
                             </li>
                             <li class="nav-item">
-                                <a href="layouts-vertical-hovered" target="_blank" class="nav-link"><?php echo app('translator')->get('translation.hovered'); ?></a>
+                                <a href="apps-calendar" class="nav-link">Voucher Print</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Voucher Encash</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Document</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Settlement & Rebate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Rebate Approval</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Write Off</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Loan Re-Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Loan Cancel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Add Customer History</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Reminder Letter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Letter Inactive</a>
                             </li>
                         </ul>
                     </div>
-                </li> <!-- end Dashboard Menu -->
-
-                <li class="menu-title"><i class="ri-more-fill"></i> <span><?php echo app('translator')->get('translation.pages'); ?></span></li>
-
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
-                        <i data-feather="users" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.authentication'); ?></span>
+                    <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarAuth">
+                        <i data-feather="users" class="icon-dual"></i> <span>INSTALLMENT</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarAuth">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="#sidebarSignIn" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignIn"><?php echo app('translator')->get('translation.signin'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarSignIn">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-signin-basic" class="nav-link"><?php echo app('translator')->get('translation.basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-signin-cover" class="nav-link"><?php echo app('translator')->get('translation.cover'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="apps-calendar" class="nav-link">Cash Installment</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarSignUp" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSignUp"><?php echo app('translator')->get('translation.signup'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarSignUp">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-signup-basic" class="nav-link"><?php echo app('translator')->get('translation.basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-signup-cover" class="nav-link"><?php echo app('translator')->get('translation.cover'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#sidebarResetPass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarResetPass"><?php echo app('translator')->get('translation.password-reset'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarResetPass">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-pass-reset-basic" class="nav-link"><?php echo app('translator')->get('translation.basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-pass-reset-cover" class="nav-link"><?php echo app('translator')->get('translation.cover'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#sidebarchangePass" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarchangePass"><?php echo app('translator')->get('translation.password-create'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarchangePass">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-pass-change-basic" class="nav-link"><?php echo app('translator')->get('translation.basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-pass-change-cover" class="nav-link"><?php echo app('translator')->get('translation.cover'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#sidebarLockScreen" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLockScreen"><?php echo app('translator')->get('translation.lock-screen'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarLockScreen">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-lockscreen-basic" class="nav-link"><?php echo app('translator')->get('translation.basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-lockscreen-cover" class="nav-link"><?php echo app('translator')->get('translation.cover'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="#sidebarLogout" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLogout"><?php echo app('translator')->get('translation.logout'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarLogout">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-logout-basic" class="nav-link"><?php echo app('translator')->get('translation.basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-logout-cover" class="nav-link"><?php echo app('translator')->get('translation.cover'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="apps-chat" class="nav-link">Cheque Installment</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarSuccessMsg" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarSuccessMsg"><?php echo app('translator')->get('translation.success-message'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarSuccessMsg">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-success-msg-basic" class="nav-link"><?php echo app('translator')->get('translation.basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-success-msg-cover" class="nav-link"><?php echo app('translator')->get('translation.cover'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="#sidebarEmail" class="nav-link">Receipt Cancel</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarTwoStep" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTwoStep"><?php echo app('translator')->get('translation.two-step-verification'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarTwoStep">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-twostep-basic" class="nav-link"><?php echo app('translator')->get('translation.basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-twostep-cover" class="nav-link"><?php echo app('translator')->get('translation.cover'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="apps-calendar" class="nav-link">Cheque Return</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarErrors" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarErrors"><?php echo app('translator')->get('translation.errors'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarErrors">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="auth-404-basic" class="nav-link"><?php echo app('translator')->get('translation.404-basic'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-404-cover" class="nav-link"><?php echo app('translator')->get('translation.404-cover'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-404-alt" class="nav-link"><?php echo app('translator')->get('translation.404-alt'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-500" class="nav-link"><?php echo app('translator')->get('translation.500'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="auth-offline" class="nav-link"><?php echo app('translator')->get('translation.offline-page'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="apps-chat" class="nav-link">Down Payment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Voucher Cancel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Cheque Cancel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Credit Note</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">PRO-IT-Payment Approval</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Cash in Hand to Bank</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
-                        <i data-feather="command" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.pages'); ?></span>
+                    <a class="nav-link menu-link" href="#sidebarPages" data-bs-toggle="collapse" role="button"
+                       aria-expanded="false" aria-controls="sidebarPages">
+                        <i data-feather="command" class="icon-dual"></i> <span>REPORT</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarPages">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="pages-starter" class="nav-link"><?php echo app('translator')->get('translation.starter'); ?></a>
+                                <a href="apps-calendar" class="nav-link">Arrears Detail</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarProfile" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProfile"><?php echo app('translator')->get('translation.profile'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarProfile">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="pages-profile" class="nav-link"><?php echo app('translator')->get('translation.simple-page'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="pages-profile-settings" class="nav-link"><?php echo app('translator')->get('translation.settings'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="apps-chat" class="nav-link">Client Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-team" class="nav-link"><?php echo app('translator')->get('translation.team'); ?></a>
+                                <a href="#sidebarEmail" class="nav-link">Financial Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-timeline" class="nav-link"><?php echo app('translator')->get('translation.timeline'); ?></a>
+                                <a href="apps-calendar" class="nav-link">Center Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-faqs" class="nav-link"><?php echo app('translator')->get('translation.faqs'); ?></a>
+                                <a href="apps-chat" class="nav-link">Cheque Printing Detail</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-pricing" class="nav-link"><?php echo app('translator')->get('translation.pricing'); ?></a>
+                                <a href="#sidebarEmail" class="nav-link">Master Sheet</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-gallery" class="nav-link"><?php echo app('translator')->get('translation.gallery'); ?></a>
+                                <a href="apps-calendar" class="nav-link">Family Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-maintenance" class="nav-link"><?php echo app('translator')->get('translation.maintenance'); ?></a>
+                                <a href="apps-chat" class="nav-link">Installment Detail</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-coming-soon" class="nav-link"><?php echo app('translator')->get('translation.coming-soon'); ?></a>
+                                <a href="#sidebarEmail" class="nav-link">Insurance Detail</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-sitemap" class="nav-link"><?php echo app('translator')->get('translation.sitemap'); ?></a>
+                                <a href="apps-calendar" class="nav-link">Ledger Card</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-search-results" class="nav-link"><?php echo app('translator')->get('translation.search-results'); ?></a>
+                                <a href="apps-chat" class="nav-link">Loan Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-privacy-policy" class="nav-link"><span><?php echo app('translator')->get('translation.privacy-policy'); ?></span> <span class="badge badge-pill bg-success"><?php echo app('translator')->get('translation.new'); ?></span></a>
+                                <a href="#sidebarEmail" class="nav-link">Receipt Cancel Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages-term-conditions" class="nav-link"><span data-key="t-term-conditions">Term & Conditions</span> <span class="badge badge-pill bg-success"><?php echo app('translator')->get('translation.new'); ?></span></a>
+                                <a href="#sidebarEmail" class="nav-link">Recovery Holiday Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Insurance Detail</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Ledger Card</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Loan Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">Not Paid Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Receipt Cancel Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Recovery Holiday Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Down Payment Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-calendar" class="nav-link">Voucher Printing Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-chat" class="nav-link">CRO Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Cheque Cancel Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Voucher Cancel Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Cheque Removal Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Debit Run Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Due Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Collection Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Customer History Sheet</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Credit Note Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Rebate Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Maturity Analysis-Capital</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Maturity Analysis -Interest</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Letter Generator Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Portfolio Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Voucher Encash Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Other Income Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">Default Income Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sidebarEmail" class="nav-link">POS Transaction Report</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarLanding" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLanding">
-                        <i class="ri-rocket-line"></i> <span><?php echo app('translator')->get('translation.landing'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarLanding">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="landing" class="nav-link"> <?php echo app('translator')->get('translation.one-page'); ?> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="nft-landing" class="nav-link"> <?php echo app('translator')->get('translation.nft-landing'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="job-landing" class="nav-link"><span><?php echo app('translator')->get('translation.job'); ?></span> <span class="badge badge-pill bg-success"><?php echo app('translator')->get('translation.new'); ?></span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="menu-title"><i class="ri-more-fill"></i> <span><?php echo app('translator')->get('translation.components'); ?></span></li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarUI">
-                        <i data-feather="package" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.base-ui'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown mega-dropdown-menu" id="sidebarUI">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="ui-alerts" class="nav-link"><?php echo app('translator')->get('translation.alerts'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-badges" class="nav-link"><?php echo app('translator')->get('translation.badges'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-buttons" class="nav-link"><?php echo app('translator')->get('translation.buttons'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-colors" class="nav-link"><?php echo app('translator')->get('translation.colors'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-cards" class="nav-link"><?php echo app('translator')->get('translation.cards'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-carousel" class="nav-link"><?php echo app('translator')->get('translation.carousel'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-dropdowns" class="nav-link"><?php echo app('translator')->get('translation.dropdowns'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-grid" class="nav-link"><?php echo app('translator')->get('translation.grid'); ?></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="ui-images" class="nav-link"><?php echo app('translator')->get('translation.images'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-tabs" class="nav-link"><?php echo app('translator')->get('translation.tabs'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-accordions" class="nav-link"><?php echo app('translator')->get('translation.accordion-collapse'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-modals" class="nav-link"><?php echo app('translator')->get('translation.modals'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-offcanvas" class="nav-link"><?php echo app('translator')->get('translation.offcanvas'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-placeholders" class="nav-link"><?php echo app('translator')->get('translation.placeholders'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-progress" class="nav-link"><?php echo app('translator')->get('translation.progress'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-notifications" class="nav-link"><?php echo app('translator')->get('translation.notifications'); ?></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="ui-media" class="nav-link"><?php echo app('translator')->get('translation.media-object'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-embed-video" class="nav-link"><?php echo app('translator')->get('translation.embed-video'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-typography" class="nav-link"><?php echo app('translator')->get('translation.typography'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-lists" class="nav-link"><?php echo app('translator')->get('translation.lists'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-general" class="nav-link"><?php echo app('translator')->get('translation.general'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-ribbons" class="nav-link"><?php echo app('translator')->get('translation.ribbons'); ?></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="ui-utilities" class="nav-link"><?php echo app('translator')->get('translation.utilities'); ?></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarAdvanceUI" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAdvanceUI">
-                        <i data-feather="layers" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.advance-ui'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarAdvanceUI">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="advance-ui-sweetalerts" class="nav-link"><?php echo app('translator')->get('translation.sweet-alerts'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="advance-ui-nestable" class="nav-link"><?php echo app('translator')->get('translation.nestable-list'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="advance-ui-scrollbar" class="nav-link"><?php echo app('translator')->get('translation.scrollbar'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="advance-ui-animation" class="nav-link"><?php echo app('translator')->get('translation.animation'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="advance-ui-tour" class="nav-link"><?php echo app('translator')->get('translation.tour'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="advance-ui-swiper" class="nav-link"><?php echo app('translator')->get('translation.swiper-slider'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="advance-ui-ratings" class="nav-link"><?php echo app('translator')->get('translation.ratings'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="advance-ui-highlight" class="nav-link"><?php echo app('translator')->get('translation.highlight'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="advance-ui-scrollspy" class="nav-link"><?php echo app('translator')->get('translation.scrollSpy'); ?></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="widgets">
-                        <i data-feather="copy" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.widgets'); ?></span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarForms" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarForms">
-                        <i data-feather="file-text" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.forms'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarForms">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="forms-elements" class="nav-link"><?php echo app('translator')->get('translation.basic-elements'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-select" class="nav-link"><?php echo app('translator')->get('translation.form-select'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-checkboxs-radios" class="nav-link"><?php echo app('translator')->get('translation.checkboxs-radios'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-pickers" class="nav-link"><?php echo app('translator')->get('translation.pickers'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-masks" class="nav-link"><?php echo app('translator')->get('translation.input-masks'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-advanced" class="nav-link"><?php echo app('translator')->get('translation.advanced'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-range-sliders" class="nav-link"><?php echo app('translator')->get('translation.range-slider'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-validation" class="nav-link"><?php echo app('translator')->get('translation.validation'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-wizard" class="nav-link"><?php echo app('translator')->get('translation.wizard'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-editors" class="nav-link"><?php echo app('translator')->get('translation.editors'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-file-uploads" class="nav-link"><?php echo app('translator')->get('translation.file-uploads'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-layouts" class="nav-link"><?php echo app('translator')->get('translation.form-layouts'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="forms-select2" class="nav-link"><?php echo app('translator')->get('translation.select2'); ?></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarTables" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarTables">
-                        <i data-feather="database" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.tables'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarTables">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="tables-basic" class="nav-link"><?php echo app('translator')->get('translation.basic-tables'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="tables-gridjs" class="nav-link"><?php echo app('translator')->get('translation.grid-js'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="tables-listjs" class="nav-link"><?php echo app('translator')->get('translation.list-js'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="tables-datatables" class="nav-link"><?php echo app('translator')->get('translation.datatables'); ?> </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarCharts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCharts">
-                        <i data-feather="pie-chart" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.charts'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarCharts">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="#sidebarApexcharts" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApexcharts"><?php echo app('translator')->get('translation.apexcharts'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarApexcharts">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="charts-apex-line" class="nav-link"><?php echo app('translator')->get('translation.line'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-area" class="nav-link"><?php echo app('translator')->get('translation.area'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-column" class="nav-link"><?php echo app('translator')->get('translation.column'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-bar" class="nav-link"><?php echo app('translator')->get('translation.bar'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-mixed" class="nav-link"><?php echo app('translator')->get('translation.mixed'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-timeline" class="nav-link"><?php echo app('translator')->get('translation.timeline'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-candlestick" class="nav-link"><?php echo app('translator')->get('translation.candlstick'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-boxplot" class="nav-link"><?php echo app('translator')->get('translation.boxplot'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-bubble" class="nav-link"><?php echo app('translator')->get('translation.bubble'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-scatter" class="nav-link"><?php echo app('translator')->get('translation.scatter'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-heatmap" class="nav-link"><?php echo app('translator')->get('translation.heatmap'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-treemap" class="nav-link"><?php echo app('translator')->get('translation.treemap'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-pie" class="nav-link"><?php echo app('translator')->get('translation.pie'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-radialbar" class="nav-link"><?php echo app('translator')->get('translation.radialbar'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-radar" class="nav-link"><?php echo app('translator')->get('translation.radar'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="charts-apex-polar" class="nav-link"><?php echo app('translator')->get('translation.polar-area'); ?></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="charts-chartjs" class="nav-link"><?php echo app('translator')->get('translation.chartjs'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="charts-echarts" class="nav-link"><?php echo app('translator')->get('translation.echarts'); ?></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarIcons">
-                        <i data-feather="archive" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.icons'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarIcons">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="icons-remix" class="nav-link"><?php echo app('translator')->get('translation.remix'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="icons-boxicons" class="nav-link"><?php echo app('translator')->get('translation.boxicons'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="icons-materialdesign" class="nav-link"><?php echo app('translator')->get('translation.material-design'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="icons-lineawesome" class="nav-link"><?php echo app('translator')->get('translation.line-awesome'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="icons-feather" class="nav-link"><?php echo app('translator')->get('translation.feather'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="icons-crypto" class="nav-link"> <span><?php echo app('translator')->get('translation.crypto-svg'); ?></span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarMaps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMaps">
-                        <i data-feather="map-pin" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.maps'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarMaps">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="maps-google" class="nav-link">
-                                    <?php echo app('translator')->get('translation.google'); ?>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="maps-vector" class="nav-link">
-                                    <?php echo app('translator')->get('translation.vector'); ?>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="maps-leaflet" class="nav-link">
-                                    <?php echo app('translator')->get('translation.leaflet'); ?>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarMultilevel" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMultilevel">
-                        <i data-feather="share-2" class="icon-dual"></i> <span><?php echo app('translator')->get('translation.multi-level'); ?></span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="sidebarMultilevel">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link"><?php echo app('translator')->get('translation.level-1.1'); ?></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#sidebarAccount" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAccount"><?php echo app('translator')->get('translation.level-1.2'); ?>
-                                </a>
-                                <div class="collapse menu-dropdown" id="sidebarAccount">
-                                    <ul class="nav nav-sm flex-column">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link"><?php echo app('translator')->get('translation.level-2.1'); ?></a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#sidebarCrm" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCrm"><?php echo app('translator')->get('translation.level-2.2'); ?>
-                                            </a>
-                                            <div class="collapse menu-dropdown" id="sidebarCrm">
-                                                <ul class="nav nav-sm flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link"><?php echo app('translator')->get('translation.level-3.1'); ?></a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="#" class="nav-link"><?php echo app('translator')->get('translation.level-3.2'); ?></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
             </ul>
         </div>
         <!-- Sidebar -->

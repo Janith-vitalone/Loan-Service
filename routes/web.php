@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 /*
@@ -15,14 +16,16 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 //Language Translation
-Route::get('index/{locale}', [App\Http\Controllers\HomeController::class, 'lang']);
+Route::get('index/{locale}', [HomeController::class, 'lang']);
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'root'])->name('root');
-Route::get('/landing', [App\Http\Controllers\HomeController::class, 'landing']);
-Route::get('/sales', [App\Http\Controllers\HomeController::class, 'sales']);
+Route::get('/', [HomeController::class, 'root'])->name('root');
+Route::get('/landing', [HomeController::class, 'landing']);
+//Sales Route
+Route::get('/sales', [HomeController::class, 'sales'])->name('sales');
+Route::get('/sales/landing', [HomeController::class, 'salesLanding'])->name('sales.landing');
 
 //Update User Details
-Route::post('/update-profile/{id}', [App\Http\Controllers\HomeController::class, 'updateProfile'])->name('updateProfile');
-Route::post('/update-password/{id}', [App\Http\Controllers\HomeController::class, 'updatePassword'])->name('updatePassword');
+Route::post('/update-profile/{id}', [HomeController::class, 'updateProfile'])->name('updateProfile');
+Route::post('/update-password/{id}', [HomeController::class, 'updatePassword'])->name('updatePassword');
 
-Route::get('{any}', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+Route::get('{any}', [HomeController::class, 'index'])->name('index');

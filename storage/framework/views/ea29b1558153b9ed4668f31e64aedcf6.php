@@ -20,10 +20,10 @@
                                         <i class="ri-pencil-ruler-2-line fs-1"></i>
                                     </div>
                                 </div>
-                                <a href="#!" class="stretched-link">
-                                    <h5 class="fs-17 pt-1">SALE</h5>
+                                <a href="<?php echo e(route('sales')); ?>" class="stretched-link">
+                                    <h5 class="fs-17 pt-1">BUSINESS</h5>
                                 </a>
-                                <p class="mb-0 text-muted">Module</p>
+                                <p class="mb-0 text-muted">MODULE</p>
                             </div>
                         </div>
                     </div>
@@ -123,4 +123,4 @@
     <script src="<?php echo e(URL::asset('build/js/pages/job-lading.init.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.landing layouts.landingtop', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/landing/landing.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.landing layouts.landingtop', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/landing/saleslanding.blade.php ENDPATH**/ ?>

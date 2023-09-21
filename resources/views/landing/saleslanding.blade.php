@@ -1,11 +1,12 @@
-<?php $__env->startSection('title'); ?>
+@extends('layouts.landing layouts.landingtop')
+@section('title')
     Job landing
-<?php $__env->stopSection(); ?>
-<?php $__env->startSection('css'); ?>
-    <link href="<?php echo e(URL::asset('build/libs/swiper/swiper-bundle.min.css')); ?>" rel="stylesheet" type="text/css"/>
-    <link href="<?php echo e(asset('public/build/css/custom.min.css')); ?>" rel="stylesheet">
-<?php $__env->stopSection(); ?>
-<?php $__env->startSection('content'); ?>
+@endsection
+@section('css')
+    <link href="{{ URL::asset('build/libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('public/build/css/custom.min.css') }}" rel="stylesheet">
+@endsection
+@section('content')
     <div class="container-fluid">
         <div class="land">
             <div class="col">
@@ -20,10 +21,10 @@
                                         <i class="ri-pencil-ruler-2-line fs-1"></i>
                                     </div>
                                 </div>
-                                <a href="#!" class="stretched-link">
-                                    <h5 class="fs-17 pt-1">SALE</h5>
+                                <a href="{{route('sales')}}" class="stretched-link">
+                                    <h5 class="fs-17 pt-1">BUSINESS</h5>
                                 </a>
-                                <p class="mb-0 text-muted">Module</p>
+                                <p class="mb-0 text-muted">MODULE</p>
                             </div>
                         </div>
                     </div>
@@ -117,10 +118,8 @@
             </div>
         </div>
     </div>
-<?php $__env->stopSection(); ?>
-<?php $__env->startSection('script'); ?>
-    <script src="<?php echo e(URL::asset('build/libs/swiper/swiper-bundle.min.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('build/js/pages/job-lading.init.js')); ?>"></script>
-<?php $__env->stopSection(); ?>
-
-<?php echo $__env->make('layouts.landing layouts.landingtop', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/landing/landing.blade.php ENDPATH**/ ?>
+@endsection
+@section('script')
+    <script src="{{ URL::asset('build/libs/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ URL::asset('build/js/pages/job-lading.init.js') }}"></script>
+@endsection
