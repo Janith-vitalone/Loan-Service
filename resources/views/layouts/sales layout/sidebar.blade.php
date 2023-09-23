@@ -40,30 +40,30 @@
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
                        aria-expanded="false" aria-controls="sidebarApps">
-                        <i data-feather="grid" class="clipboard2"></i> <span>APPLICATION</span>
+                        <i data-feather="grid" class="ri-pages-line"></i> <span>APPLICATION</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarApps">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="sales.forms-select" class="nav-link">Add CRO</a>
+                                <a href="sales.add-cro-form" class="nav-link">Add CRO</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Change CRO</a>
+                                <a href="sales.change-cro-form" class="nav-link">Change CRO</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Add Village</a>
+                                <a href="sales.add-village-form" class="nav-link">Add Village</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Root Create</a>
+                                <a href="sales.create-root-form" class="nav-link">Root Create</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Basic Details</a>
+                                <a href="sales.basic-details-form" class="nav-link">Basic Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">WE</a>
+                                <a href="" class="nav-link">WE</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Family Details</a>
+                                <a href="sales.family-details-form" class="nav-link">Family Details</a>
                             </li>
                             <li class="nav-item">
                                 <a href="apps-chat" class="nav-link">Guarantor 01 Details</a>

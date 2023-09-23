@@ -58,7 +58,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="validationDefault03" class="form-label">PASSWORD</label>
-                            <input type="password" class="form-control" id="validationDefault03" required>
+                            <input type="password" class="form-control" id="validationDefault03" placeholder="Password" required>
                         </div>
                         <div class="col-md-6">
                             <label for="exampleFormControlTextarea5" class="form-label">DESCRIPTION</label>

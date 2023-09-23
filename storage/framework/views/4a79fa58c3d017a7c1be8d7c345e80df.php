@@ -6,113 +6,211 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title mb-0">Examples</h4>
+                    <h4 class="card-title mb-0">BL APPLICATION - CLIENT BASIC DETAILS</h4>
                 </div><!-- end card header -->
 
                 <div class="card-body">
                     <form action="#">
                         <div>
-                            <h5 class="fs-14 mb-3 text-muted">Date Formatting</h5>
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="mb-3">
-                                        <label for="cleave-date" class="form-label">Date</label>
-                                        <input type="text" class="form-control" placeholder="DD-MM-YYYY" id="cleave-date">
+                                        <label for="validationDefault03" class="form-label">NIC/ PASSPORT NO/
+                                            DL </label>
+                                        <input type="text" class="form-control" id="validationDefault03" required>
                                     </div>
 
                                 </div><!-- end col -->
-
                                 <div class="col-xl-6">
                                     <div class="mb-3">
-                                        <label for="cleave-date-format" class="form-label">Date Formatting</label>
-                                        <input type="text" class="form-control" placeholder="MM/YY"
-                                            id="cleave-date-format">
+                                        <label for="exampleInputdate" class="form-label">Date Of Birth</label>
+                                        <input type="date" class="form-control" id="exampleInputdate" required>
                                     </div>
                                 </div><!-- end col -->
                             </div><!-- end row -->
                         </div>
 
-                        <div class="border mt-3 border-dashed"></div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="cleave-time-format" class="form-label">Branch No</label>
+                                    <select class="form-select mb-3" aria-label=".form-select-lg example">
+                                        <option selected>Select Branch No</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
 
-                        <div class="mt-4">
-                            <h6 class="mb-3 fs-14 text-muted">Time Formatting</h6>
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label for="cleave-time" class="form-label">Time</label>
-                                        <input type="text" class="form-control" placeholder="hh:mm:ss" id="cleave-time">
+                            </div><!-- end col -->
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="cleave-time-format" class="form-label">Root</label>
+                                    <select class="form-select mb-3" aria-label=".form-select-lg example">
+                                        <option selected>Select Root</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Root No</label>
+                                    <input type="text" class="form-control" id="validationDefault03" readonly required>
+                                </div>
+
+                            </div><!-- end col -->
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="cleave-delimiter" class="form-label">CRO</label>
+                                    <select class="form-select mb-3" aria-label=".form-select-lg example">
+                                        <option selected>Select CRO</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="cleave-delimiters" class="form-label">Province</label>
+                                    <select class="form-select mb-3" aria-label=".form-select-lg example">
+                                        <option selected>Select Province</option>
+                                        <option value="1">Central</option>
+                                        <option value="2">Western</option>
+                                        <option value="3">North</option>
+                                    </select>
+                                </div>
+                            </div><!-- end col -->
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">GS Ward</label>
+                                    <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                            </div><!-- end col -->
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Given Names</label>
+                                    <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Initials With Name</label>
+                                    <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                            </div><!-- end col -->
+
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Other Names</label>
+                                    <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Marital Status</label>
+                                    <div class="row">
+                                        <div class="col-12 mt-2">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Married
+                                            </label> &nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                   id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Unmarried
+                                            </label>
+                                        </div>
                                     </div>
+                                </div>
+                            </div><!-- end col -->
 
-                                </div><!-- end col -->
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Education</label>
+                                    <select class="form-select mb-3" aria-label=".form-select-lg example">
+                                        <option selected>Primary</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Telephone No</label>
+                                    <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                            </div><!-- end col -->
 
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label for="cleave-time-format" class="form-label">Time Formatting</label>
-                                        <input type="text" class="form-control" placeholder="hh:mm"
-                                            id="cleave-time-format">
-                                    </div>
-                                </div><!-- end col -->
-                            </div><!-- end row -->
-                        </div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Mobile No</label>
+                                    <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Permanent Address</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                                </div>
+                            </div><!-- end col -->
 
-                        <div class="border mt-3 border-dashed"></div>
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Inspection Date</label>
+                                    <input type="date" class="form-control" id="exampleInputdate" required>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Client Photo</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div><!-- end col -->
 
-                        <div class="mt-4">
-                            <h5 class="fs-14 mb-3 text-muted">Custom Options</h5>
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label for="cleave-ccard" class="form-label">Credit Card</label>
-                                        <input type="text" class="form-control" id="cleave-ccard"
-                                            placeholder="xxxx xxxx xxxx xxxx">
-                                    </div>
-
-                                </div><!-- end col -->
-
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label for="cleave-delimiter" class="form-label">Delimiter</label>
-                                        <input type="text" class="form-control" id="cleave-delimiter"
-                                            placeholder="xxx·xxx·xxx">
-                                    </div>
-                                </div><!-- end col -->
-                            </div><!-- end row -->
-
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label for="cleave-delimiters" class="form-label">Delimiters</label>
-                                        <input type="text" class="form-control" id="cleave-delimiters"
-                                            placeholder="xxx.xxx.xxx-xx">
-                                    </div>
-                                </div><!-- end col -->
-
-                                <div class="col-xl-6">
-                                    <div class="mb-3">
-                                        <label for="cleave-prefix" class="form-label">Prefix</label>
-                                        <input type="text" class="form-control" id="cleave-prefix">
-                                    </div>
-                                </div><!-- end col -->
-                            </div><!-- end row -->
-
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="mb-3 mb-xl-0">
-                                        <label for="cleave-phone" class="form-label">Phone</label>
-                                        <input type="text" class="form-control" id="cleave-phone"
-                                            placeholder="(xxx)xxx-xxxx">
-                                    </div>
-                                </div><!-- end col -->
-
-                                <div class="col-xl-6">
-                                    <div class="mb-0">
-                                        <label for="cleave-numeral" class="form-label">Numeral Formatting</label>
-                                        <input type="text" class="form-control" placeholder="Enter numeral"
-                                            id="cleave-numeral">
-                                    </div>
-                                </div><!-- end col -->
-                            </div><!-- end row -->
-
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Upload File</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form><!-- end form -->
                 </div><!-- end card-body -->

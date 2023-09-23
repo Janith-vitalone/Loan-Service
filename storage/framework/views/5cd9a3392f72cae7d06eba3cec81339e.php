@@ -20,7 +20,7 @@
                                         <i class="ri-pencil-ruler-2-line fs-1"></i>
                                     </div>
                                 </div>
-                                <a href="#!" class="stretched-link">
+                                <a href="<?php echo e(route('sales.landing')); ?>" class="stretched-link">
                                     <h5 class="fs-17 pt-1">SALE</h5>
                                 </a>
                                 <p class="mb-0 text-muted">Module</p>
