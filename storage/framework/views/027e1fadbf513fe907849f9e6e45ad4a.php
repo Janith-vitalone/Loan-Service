@@ -40,7 +40,7 @@
                         <div class="col-md-6">
                             <label for="employeeName" class="form-label">Ownership</label>
                             <select class="form-select mb-3" aria-label=".form-select-lg example"  required>
-                                <option selected>Select Branch CODE</option>
+                                <option selected>Own</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
