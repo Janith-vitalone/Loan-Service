@@ -12,7 +12,7 @@
                 <div class="card-body p-5">
                     <form action="">
                         <div class="col-md-6">
-                            <label for="employeeName" class="form-label">Product Daily</label>
+                            <label for="employeeName" class="form-label">Product</label>
                             <select class="form-select mb-3" aria-label=".form-select-lg example">
                                 <option selected>Business Loan - Daily</option>
                                 <option value="1">One</option>
@@ -25,29 +25,12 @@
                             <input type="text" class="form-control" id="validationDefault03" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="employeeName" class="form-label">VILLAGE</label>
-                            <div class="row">
-                                <div class="col-12 mt-2">
-                                    <select class="form-select mb-3" aria-label=".form-select-lg example">
-                                        <option selected>Select Branch CODE</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;
-
-                                    <select class="form-select mb-3" aria-label=".form-select-lg example">
-                                        <option selected>Select Branch CODE</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div>
+                            <label for="validationDefault03" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="validationDefault03" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="employeeName" class="form-label">CRO</label>
-                            <select class="form-select mb-3" aria-label=".form-select-lg example">
+                            <label for="employeeName" class="form-label">Type</label>
+                            <select class="form-select mb-3" aria-label=".form-select-lg example" required>
                                 <option selected>Select Branch CODE</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -55,11 +38,25 @@
                             </select>
                         </div>
                         <div class="col-md-6">
-                            <label for="validationDefault03" class="form-label">ROOT NAME</label>
-                            <input type="text" class="form-control" id="validationDefault03" required disabled>
+                            <label for="employeeName" class="form-label">Ownership</label>
+                            <select class="form-select mb-3" aria-label=".form-select-lg example"  required>
+                                <option selected>Select Branch CODE</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationDefault03" class="form-label">Ref No</label>
+                            <input type="text" class="form-control" id="validationDefault03" required >
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleInputdate" class="form-label">Book Date</label>
+                            <input type="date" class="form-control" id="exampleInputdate" required>
                         </div>
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Add</button>
+                            <button type="submit" class="btn btn-primary">Clear</button>
                         </div>
                     </form>
                 </div><!-- end card-body -->

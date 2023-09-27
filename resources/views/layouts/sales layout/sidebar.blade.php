@@ -75,7 +75,7 @@
                                 <a href="sales.guarantor-details-03-form" class="nav-link">Guarantor 03 Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">PDC Security</a>
+                                <a href="sales.pdc-security-form" class="nav-link">PDC Security</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#sidebarEmail" class="nav-link">Financial Detail</a>
