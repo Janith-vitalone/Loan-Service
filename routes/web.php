@@ -18,11 +18,12 @@ Auth::routes();
 //Language Translation
 Route::get('index/{locale}', [HomeController::class, 'lang']);
 
-Route::get('/', [HomeController::class, 'root'])->name('root');
-Route::get('/landing', [HomeController::class, 'landing']);
+Route::get('/', [HomeController::class, 'landing'])->name('root');
+//Route::get('/landing', [HomeController::class, 'landing'])->name('landing');
+
 //Sales Route
-Route::get('/sales', [HomeController::class, 'sales'])->name('sales');
 Route::get('/sales/landing', [HomeController::class, 'salesLanding'])->name('sales.landing');
+Route::get('/dashboard', [HomeController::class, 'sales'])->name('sales');
 
 //Update User Details
 Route::post('/update-profile/{id}', [HomeController::class, 'updateProfile'])->name('updateProfile');

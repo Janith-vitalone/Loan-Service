@@ -39,7 +39,7 @@
                                     </div>
                                 </div>
                                 <a href="#!" class="stretched-link">
-                                    <h5 class="fs-17 pt-1">FINANCE</h5>
+                                    <h5 class="fs-17 pt-1"></h5>
                                 </a>
                                 <p class="mb-0 text-muted">Module</p>
                             </div>
@@ -56,7 +56,7 @@
                                     </div>
                                 </div>
                                 <a href="#!" class="stretched-link">
-                                    <h5 class="fs-17 pt-1">HR</h5>
+                                    <h5 class="fs-17 pt-1"></h5>
                                 </a>
                                 <p class="mb-0 text-muted">Module</p>
                             </div>
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                                 <a href="#!" class="stretched-link">
-                                    <h5 class="fs-17 pt-1">OPERATION</h5>
+                                    <h5 class="fs-17 pt-1"></h5>
                                 </a>
                                 <p class="mb-0 text-muted">Module</p>
                             </div>
@@ -90,7 +90,7 @@
                                     </div>
                                 </div>
                                 <a href="#!" class="stretched-link">
-                                    <h5 class="fs-17 pt-1">ADMIN</h5>
+                                    <h5 class="fs-17 pt-1"></h5>
                                 </a>
                                 <p class="mb-0 text-muted">Module</p>
                             </div>
@@ -107,7 +107,7 @@
                                     </div>
                                 </div>
                                 <a href="#!" class="stretched-link">
-                                    <h5 class="fs-17 pt-1">Planing</h5>
+                                    <h5 class="fs-17 pt-1"></h5>
                                 </a>
                                 <p class="mb-0 text-muted">Module</p>
                             </div>

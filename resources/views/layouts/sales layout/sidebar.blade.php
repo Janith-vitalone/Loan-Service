@@ -66,13 +66,13 @@
                                 <a href="sales.family-details-form" class="nav-link">Family Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Guarantor 01 Details</a>
+                                <a href="sales.guarantor-details-01-form" class="nav-link">Guarantor 01 Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Guarantor 02 Details</a>
+                                <a href="sales.guarantor-details-02-form" class="nav-link">Guarantor 02 Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Guarantor 03 Details</a>
+                                <a href="sales.guarantor-details-03-form" class="nav-link">Guarantor 03 Details</a>
                             </li>
                             <li class="nav-item">
                                 <a href="apps-chat" class="nav-link">PDC Security</a>
