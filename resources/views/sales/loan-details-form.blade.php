@@ -17,14 +17,17 @@
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="mb-3">
-                                        <label for="validationDefault03" class="form-label">Basic Income</label>
+                                        <label for="validationDefault03" class="form-label">Contract Code</label>
                                         <input type="text" class="form-control" id="validationDefault03" required>
                                     </div>
                                 </div><!-- end col -->
                                 <div class="col-xl-6">
                                     <div class="mb-3">
-                                        <label for="cleave-delimiter" class="form-label">Other Allowance</label>
-                                        <input type="text" class="form-control" id="validationDefault03" required>
+                                        <label for="cleave-delimiter" class="form-label">Loan Type</label>
+                                        <select class="form-select mb-3" aria-label=".form-select-lg example" required>
+                                            <option selected>Model One</option>
+                                            <option value="1">1.</option>
+                                        </select>
                                     </div>
                                 </div><!-- end col -->
                             </div><!-- end row -->
@@ -32,27 +35,13 @@
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="mb-3">
-                                    <label for="validationDefault03" class="form-label">Basic Income</label>
+                                    <label for="validationDefault03" class="form-label">Facility Amount</label>
                                     <input type="text" class="form-control" id="validationDefault03" required>
                                 </div>
                             </div><!-- end col -->
                             <div class="col-xl-6">
                                 <div class="mb-3">
-                                    <label for="cleave-delimiter" class="form-label">Other Allowance</label>
-                                    <input type="text" class="form-control" id="validationDefault03" required>
-                                </div>
-                            </div><!-- end col -->
-                        </div><!-- end row -->
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="mb-3">
-                                    <label for="validationDefault03" class="form-label">Basic Income</label>
-                                    <input type="text" class="form-control" id="validationDefault03" required>
-                                </div>
-                            </div><!-- end col -->
-                            <div class="col-xl-6">
-                                <div class="mb-3">
-                                    <label for="cleave-delimiter" class="form-label">Other Allowance</label>
+                                    <label for="cleave-delimiter" class="form-label">Service Charges</label>
                                     <input type="text" class="form-control" id="validationDefault03" required>
                                 </div>
                             </div><!-- end col -->
@@ -60,13 +49,13 @@
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="mb-3">
-                                    <label for="validationDefault03" class="form-label">Basic Income</label>
+                                    <label for="validationDefault03" class="form-label">Registration Fee</label>
                                     <input type="text" class="form-control" id="validationDefault03" required>
                                 </div>
                             </div><!-- end col -->
                             <div class="col-xl-6">
                                 <div class="mb-3">
-                                    <label for="cleave-delimiter" class="form-label">Other Allowance</label>
+                                    <label for="cleave-delimiter" class="form-label">Welfare Fee</label>
                                     <input type="text" class="form-control" id="validationDefault03" required>
                                 </div>
                             </div><!-- end col -->
@@ -74,13 +63,30 @@
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="mb-3">
-                                    <label for="validationDefault03" class="form-label">Basic Income</label>
+                                    <label for="validationDefault03" class="form-label">Other Changes</label>
                                     <input type="text" class="form-control" id="validationDefault03" required>
                                 </div>
                             </div><!-- end col -->
                             <div class="col-xl-6">
                                 <div class="mb-3">
-                                    <label for="cleave-delimiter" class="form-label">Other Allowance</label>
+                                    <label for="cleave-delimiter" class="form-label">Interest Rate &nbsp;(M%)</label>
+                                    <input type="text" class="form-control" id="validationDefault03" required>
+                                </div>
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="validationDefault03" class="form-label">Period</label>
+                                    <select class="form-select mb-3" aria-label=".form-select-lg example" required>
+                                        <option selected>20 Days</option>
+                                        <option value="1">1.</option>
+                                    </select>
+                                </div>
+                            </div><!-- end col -->
+                            <div class="col-xl-6">
+                                <div class="mb-3">
+                                    <label for="cleave-delimiter" class="form-label">Daily Installment</label>
                                     <input type="text" class="form-control" id="validationDefault03" required>
                                 </div>
                             </div><!-- end col -->
@@ -95,27 +101,13 @@
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="mb-3">
-                                            <label for="validationDefault03" class="form-label">Basic Income</label>
+                                            <label for="validationDefault03" class="form-label">Account Name</label>
                                             <input type="text" class="form-control" id="validationDefault03" required>
                                         </div>
                                     </div><!-- end col -->
                                     <div class="col-xl-6">
                                         <div class="mb-3">
-                                            <label for="cleave-delimiter" class="form-label">Other Allowance</label>
-                                            <input type="text" class="form-control" id="validationDefault03" required>
-                                        </div>
-                                    </div><!-- end col -->
-                                </div><!-- end row -->
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label for="validationDefault03" class="form-label">Basic Income</label>
-                                            <input type="text" class="form-control" id="validationDefault03" required>
-                                        </div>
-                                    </div><!-- end col -->
-                                    <div class="col-xl-6">
-                                        <div class="mb-3">
-                                            <label for="cleave-delimiter" class="form-label">Other Allowance</label>
+                                            <label for="cleave-delimiter" class="form-label">Account Number</label>
                                             <input type="text" class="form-control" id="validationDefault03" required>
                                         </div>
                                     </div><!-- end col -->
@@ -123,18 +115,39 @@
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="mb-3">
-                                            <label for="validationDefault03" class="form-label">Basic Income</label>
+                                            <label for="validationDefault03" class="form-label">Bank name</label>
                                             <input type="text" class="form-control" id="validationDefault03" required>
                                         </div>
                                     </div><!-- end col -->
                                     <div class="col-xl-6">
                                         <div class="mb-3">
-                                            <label for="cleave-delimiter" class="form-label">Other Allowance</label>
+                                            <label for="cleave-delimiter" class="form-label">Bank Code</label>
+                                            <input type="text" class="form-control" id="validationDefault03" required>
+                                        </div>
+                                    </div><!-- end col -->
+                                </div><!-- end row -->
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="mb-3">
+                                            <label for="validationDefault03" class="form-label">Branch</label>
+                                            <select class="form-select mb-3" aria-label=".form-select-lg example">
+                                                <option selected></option>
+                                                <option value="1">1.</option>
+                                            </select>
+                                        </div>
+                                    </div><!-- end col -->
+                                    <div class="col-xl-6">
+                                        <div class="mb-3">
+                                            <label for="cleave-delimiter" class="form-label">Branch Code</label>
                                             <input type="text" class="form-control" id="validationDefault03" required>
                                         </div>
                                     </div><!-- end col -->
                                 </div><!-- end row -->
                             </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-success">Update</button>
                         </div>
                     </form><!-- end form -->
                 </div><!-- end card-body -->

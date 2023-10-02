@@ -84,7 +84,7 @@
                                 <a href="sales.loan-details-form" class="nav-link">Loan Detail</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Add Holiday</a>
+                                <a href="sales.recovery-holiday" class="nav-link">Add Holiday</a>
                             </li>
                         </ul>
                     </div>
