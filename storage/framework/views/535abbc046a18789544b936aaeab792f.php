@@ -6,7 +6,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title mb-0">Guarantor DETAILS 02</h4>
+                    <h4 class="card-title mb-0">Guarantor DETAILS 03</h4>
                 </div><!-- end card header -->
                 <div class="card-body">
                     <form action="#">
@@ -228,9 +228,9 @@
                             </div><!-- end col -->
                         </div><!-- end row -->
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary">Next</button>
+                            <button type="submit" class="btn btn-primary">Previous</button>
                             <button type="submit" class="btn btn-primary">Update</button>
-                            <button type="submit" class="btn btn-primary danger">Skip</button>
+                            <button type="submit" class="btn btn-primary danger">Submit</button>
                         </div>
                     </form><!-- end form -->
                 </div><!-- end card-body -->
@@ -246,4 +246,4 @@
     <script src="<?php echo e(URL::asset('build/js/app.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.sales layout.layouts-detached', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/sales/guarantor-details-02-form.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.sales layout.layouts-detached', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/sales/application/guarantor-details-03-form.blade.php ENDPATH**/ ?>

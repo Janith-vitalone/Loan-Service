@@ -1,12 +1,13 @@
-<?php $__env->startSection('title'); ?>
-    <?php echo app('translator')->get('translation.input-masks'); ?>
-<?php $__env->stopSection(); ?>
-<?php $__env->startSection('content'); ?>
+@extends('layouts.sales layout.layouts-detached')
+@section('title')
+    @lang('translation.input-masks')
+@endsection
+@section('content')
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title mb-0">Guarantor DETAILS 02</h4>
+                    <h4 class="card-title mb-0">Guarantor DETAILS 03</h4>
                 </div><!-- end card header -->
                 <div class="card-body">
                     <form action="#">
@@ -228,9 +229,9 @@
                             </div><!-- end col -->
                         </div><!-- end row -->
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary">Next</button>
+                            <button type="submit" class="btn btn-primary">Previous</button>
                             <button type="submit" class="btn btn-primary">Update</button>
-                            <button type="submit" class="btn btn-primary danger">Skip</button>
+                            <button type="submit" class="btn btn-primary danger">Submit</button>
                         </div>
                     </form><!-- end form -->
                 </div><!-- end card-body -->
@@ -239,11 +240,9 @@
         <!-- end col -->
     </div>
     <!-- end row -->
-<?php $__env->stopSection(); ?>
-<?php $__env->startSection('script'); ?>
-    <script src="<?php echo e(URL::asset('build/libs/cleave.js/cleave.min.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('build/js/pages/form-masks.init.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('build/js/app.js')); ?>"></script>
-<?php $__env->stopSection(); ?>
-
-<?php echo $__env->make('layouts.sales layout.layouts-detached', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/sales/guarantor-details-02-form.blade.php ENDPATH**/ ?>
+@endsection
+@section('script')
+    <script src="{{ URL::asset('build/libs/cleave.js/cleave.min.js') }}"></script>
+    <script src="{{ URL::asset('build/js/pages/form-masks.init.js') }}"></script>
+    <script src="{{ URL::asset('build/js/app.js') }}"></script>
+@endsection

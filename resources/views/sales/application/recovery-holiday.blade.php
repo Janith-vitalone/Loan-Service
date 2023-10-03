@@ -1,20 +1,21 @@
-<?php $__env->startSection('title'); ?>
-    <?php echo app('translator')->get('translation.input-masks'); ?>
-<?php $__env->stopSection(); ?>
-<?php $__env->startSection('css'); ?>
-    <link rel="stylesheet" href="<?php echo e(URL::asset('build/libs/@simonwep/pickr/themes/classic.min.css')); ?>" /> <!-- 'classic' theme -->
-    <link rel="stylesheet" href="<?php echo e(URL::asset('build/libs/@simonwep/pickr/themes/monolith.min.css')); ?>" /> <!-- 'monolith' theme -->
-    <link rel="stylesheet" href="<?php echo e(URL::asset('build/libs/@simonwep/pickr/themes/nano.min.css')); ?>" /> <!-- 'nano' theme -->
-<?php $__env->stopSection(); ?>
-<?php $__env->startSection('content'); ?>
-    <?php $__env->startComponent('components.breadcrumb'); ?>
-        <?php $__env->slot('li_1'); ?>
+@extends('layouts.sales layout.layouts-detached')
+@section('title')
+    @lang('translation.input-masks')
+@endsection
+@section('css')
+    <link rel="stylesheet" href="{{ URL::asset('build/libs/@simonwep/pickr/themes/classic.min.css') }}" /> <!-- 'classic' theme -->
+    <link rel="stylesheet" href="{{ URL::asset('build/libs/@simonwep/pickr/themes/monolith.min.css') }}" /> <!-- 'monolith' theme -->
+    <link rel="stylesheet" href="{{ URL::asset('build/libs/@simonwep/pickr/themes/nano.min.css') }}" /> <!-- 'nano' theme -->
+@endsection
+@section('content')
+    @component('components.breadcrumb')
+        @slot('li_1')
 
-        <?php $__env->endSlot(); ?>
-        <?php $__env->slot('title'); ?>
+        @endslot
+        @slot('title')
 
-        <?php $__env->endSlot(); ?>
-    <?php echo $__env->renderComponent(); ?>
+        @endslot
+    @endcomponent
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
@@ -51,11 +52,9 @@
         <!-- end col -->
     </div>
     <!-- end row -->
-<?php $__env->stopSection(); ?>
-<?php $__env->startSection('script'); ?>
-    <script src="<?php echo e(URL::asset('build/libs/@simonwep/pickr/pickr.min.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('build/js/pages/form-pickers.init.js')); ?>"></script>
-    <script src="<?php echo e(URL::asset('build/js/app.js')); ?>"></script>
-<?php $__env->stopSection(); ?>
-
-<?php echo $__env->make('layouts.sales layout.layouts-detached', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /var/www/Loan_serv_L/resources/views/sales/recovery-holiday.blade.php ENDPATH**/ ?>
+@endsection
+@section('script')
+    <script src="{{ URL::asset('build/libs/@simonwep/pickr/pickr.min.js') }}"></script>
+    <script src="{{ URL::asset('build/js/pages/form-pickers.init.js') }}"></script>
+    <script src="{{ URL::asset('build/js/app.js') }}"></script>
+@endsection

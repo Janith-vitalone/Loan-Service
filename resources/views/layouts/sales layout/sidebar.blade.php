@@ -45,46 +45,46 @@
                     <div class="collapse menu-dropdown" id="sidebarApps">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="sales.add-cro-form" class="nav-link">Add CRO</a>
+                                <a href="sales.application.add-cro-form" class="nav-link">Add CRO</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.change-cro-form" class="nav-link">Change CRO</a>
+                                <a href="sales.application.change-cro-form" class="nav-link">Change CRO</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.add-village-form" class="nav-link">Add Village</a>
+                                <a href="sales.application.add-village-form" class="nav-link">Add Village</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.create-root-form" class="nav-link">Root Create</a>
+                                <a href="sales.application.create-root-form" class="nav-link">Root Create</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.basic-details-form" class="nav-link">Basic Details</a>
+                                <a href="sales.application.basic-details-form" class="nav-link">Basic Details</a>
                             </li>
                             <li class="nav-item">
                                 <a href="" class="nav-link">WE</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.family-details-form" class="nav-link">Family Details</a>
+                                <a href="sales.application.family-details-form" class="nav-link">Family Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.guarantor-details-01-form" class="nav-link">Guarantor 01 Details</a>
+                                <a href="sales.application.guarantor-details-01-form" class="nav-link">Guarantor 01 Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.guarantor-details-02-form" class="nav-link">Guarantor 02 Details</a>
+                                <a href="sales.application.guarantor-details-02-form" class="nav-link">Guarantor 02 Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.guarantor-details-03-form" class="nav-link">Guarantor 03 Details</a>
+                                <a href="sales.application.guarantor-details-03-form" class="nav-link">Guarantor 03 Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.pdc-security-form" class="nav-link">PDC Security</a>
+                                <a href="sales.application.pdc-security-form" class="nav-link">PDC Security</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.business-details-form" class="nav-link">Financial Detail</a>
+                                <a href="sales.application.business-details-form" class="nav-link">Financial Detail (Business Details)</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.loan-details-form" class="nav-link">Loan Detail</a>
+                                <a href="sales.application.loan-details-form" class="nav-link">Loan Detail</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.recovery-holiday" class="nav-link">Add Holiday</a>
+                                <a href="sales.application.recovery-holiday" class="nav-link">Add Holiday</a>
                             </li>
                         </ul>
                     </div>
@@ -97,46 +97,46 @@
                     <div class="collapse menu-dropdown" id="sidebarLayouts">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">First Approval</a>
+                                <a href="sales.approvals.first-approval-details-form" class="nav-link">First Approval</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Loan Approval</a>
+                                <a href="sales.approvals.loan-approval-details-form" class="nav-link">Loan Approval</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Cheque Approval</a>
+                                <a href="sales.approvals.cheque-approval-form" class="nav-link">Cheque Approval</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Voucher Print</a>
+                                <a href="sales.approvals.voucher-print-form" class="nav-link">Voucher Print</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Voucher Encash</a>
+                                <a href="sales.approvals.voucher-encash" class="nav-link">Voucher Encash</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Document</a>
+                                <a href="sales.approvals.document-form" class="nav-link">Document</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Settlement & Rebate</a>
+                                <a href="sales.approvals.settlement-rebate-approval-form" class="nav-link">Settlement & Rebate</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Rebate Approval</a>
+                                <a href="sales.approvals.rebate-approval-form" class="nav-link">Rebate Approval</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Write Off</a>
+                                <a href="sales.approvals.write-off" class="nav-link">Write Off</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Loan Re-Schedule</a>
+                                <a href="sales.approvals.loan-re-shedule" class="nav-link">Loan Re-Schedule</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Loan Cancel</a>
+                                <a href="sales.approvals.loan-cancel" class="nav-link">Loan Cancel</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Add Customer History</a>
+                                <a href="sales.approvals.customer-history" class="nav-link">Add Customer History</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Reminder Letter</a>
+                                <a href="sales.approvals.reminder-letter" class="nav-link">Reminder Letter</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Letter Inactive</a>
+                                <a href="sales.approvals.letter-inactive" class="nav-link">Letter Inactive</a>
                             </li>
                         </ul>
                     </div>
