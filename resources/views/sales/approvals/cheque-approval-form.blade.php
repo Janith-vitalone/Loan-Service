@@ -12,7 +12,6 @@
                 </div><!-- end card header -->
                 <div class="card-body">
                     <form action="">
-
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="mb-3">
@@ -42,7 +41,6 @@
                                 </div>
                             </div>
                         </div><!-- end row -->
-
                     </form>
                 </div><!-- end card-body -->
             </div><!-- end card -->

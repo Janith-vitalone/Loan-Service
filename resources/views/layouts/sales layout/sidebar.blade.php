@@ -3,7 +3,7 @@
     <!-- LOGO -->
     <div class="navbar-brand-box">
         <!-- Dark Logo-->
-        <a href="index" class="logo logo-dark">
+        <a href="#" class="logo logo-dark">
             <span class="logo-sm">
                 <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" height="22">
             </span>
@@ -12,7 +12,7 @@
             </span>
         </a>
         <!-- Light Logo-->
-        <a href="index" class="logo logo-light">
+        <a href="#" class="logo logo-light">
             <span class="logo-sm">
                 <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" height="22">
             </span>
@@ -66,19 +66,23 @@
                                 <a href="sales.application.family-details-form" class="nav-link">Family Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.application.guarantor-details-01-form" class="nav-link">Guarantor 01 Details</a>
+                                <a href="sales.application.guarantor-details-01-form" class="nav-link">Guarantor 01
+                                    Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.application.guarantor-details-02-form" class="nav-link">Guarantor 02 Details</a>
+                                <a href="sales.application.guarantor-details-02-form" class="nav-link">Guarantor 02
+                                    Details</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.application.guarantor-details-03-form" class="nav-link">Guarantor 03 Details</a>
+                                <a href="sales.application.guarantor-details-03-form" class="nav-link">Guarantor 03
+                                    Details</a>
                             </li>
                             <li class="nav-item">
                                 <a href="sales.application.pdc-security-form" class="nav-link">PDC Security</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.application.business-details-form" class="nav-link">Financial Detail (Business Details)</a>
+                                <a href="sales.application.business-details-form" class="nav-link">Financial Detail
+                                    (Business Details)</a>
                             </li>
                             <li class="nav-item">
                                 <a href="sales.application.loan-details-form" class="nav-link">Loan Detail</a>
@@ -115,7 +119,8 @@
                                 <a href="sales.approvals.document-form" class="nav-link">Document</a>
                             </li>
                             <li class="nav-item">
-                                <a href="sales.approvals.settlement-rebate-approval-form" class="nav-link">Settlement & Rebate</a>
+                                <a href="sales.approvals.settlement-rebate-approval-form" class="nav-link">Settlement &
+                                    Rebate</a>
                             </li>
                             <li class="nav-item">
                                 <a href="sales.approvals.rebate-approval-form" class="nav-link">Rebate Approval</a>
@@ -140,6 +145,7 @@
                             </li>
                         </ul>
                     </div>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button"
                        aria-expanded="false" aria-controls="sidebarAuth">
@@ -148,34 +154,34 @@
                     <div class="collapse menu-dropdown" id="sidebarAuth">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Cash Installment</a>
+                                <a href="sales.installment.cash-installment" class="nav-link">Cash Installment</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Cheque Installment</a>
+                                <a href="sales.installment.cheque-installment" class="nav-link">Cheque Installment</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Receipt Cancel</a>
+                                <a href="sales.installment.receipt-cancel" class="nav-link">Receipt Cancel</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Cheque Return</a>
+                                <a href="sales.installment.cheque-return" class="nav-link">Cheque Return</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Down Payment</a>
+                                <a href="sales.installment.down-payment" class="nav-link">Down Payment</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">Voucher Cancel</a>
+                                <a href="sales.installment.voucher-cancel" class="nav-link">Voucher Cancel</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Cheque Cancel</a>
+                                <a href="sales.installment.cheque-cancel" class="nav-link">Cheque Cancel</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-chat" class="nav-link">Credit Note</a>
+                                <a href="sales.installment.credit-note" class="nav-link">Credit Note</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sidebarEmail" class="nav-link">PRO-IT-Payment Approval</a>
+                                <a href="sales.installment.payment-approval" class="nav-link">PRO-IT-Payment Approval</a>
                             </li>
                             <li class="nav-item">
-                                <a href="apps-calendar" class="nav-link">Cash in Hand to Bank</a>
+                                <a href="sales.installment.cash-in-hand-to-bank" class="nav-link">Cash in Hand to Bank</a>
                             </li>
                         </ul>
                     </div>
